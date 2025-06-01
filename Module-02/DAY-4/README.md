@@ -63,7 +63,17 @@ public class Sum {
 
 
 ## OUTPUT:
+```
+Input       Expected                                  Got
 
+3           Elements in Array are :                   Sum of the array: 25                  
+            3  4  5  6  7                             
+4
+5
+6
+7
+
+```
 
 
 
