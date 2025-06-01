@@ -31,7 +31,7 @@ RegisterNumber:  212222040149
 ```
 import java.util.Scanner;
 
-public class LargestElement {
+public class Sum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -42,15 +42,13 @@ public class LargestElement {
             array[i] = scanner.nextInt();
         }
 
-        int largest = array[0]; // Assume the first element is the largest initially
+       int sum=0;
 
         for (int i = 1; i < size; i++) {
-            if (array[i] > largest) {
-                largest = array[i];
-            }
+            sum+=array[i];
         }
 
-        System.out.println("The largest element in the array is: " + largest);
+        System.out.println("Sum of the array: " + sum);
 
         scanner.close();
     }
@@ -66,7 +64,6 @@ public class LargestElement {
 
 ## OUTPUT:
 
-<img width="761" alt="image" src="https://github.com/user-attachments/assets/815af82b-dc82-46f2-b13f-96ce82432fbd" />
 
 
 
