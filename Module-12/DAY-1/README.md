@@ -24,20 +24,43 @@
  ```
 /*
 Program to implement a JAVA TREE MAP using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SANTHAKUMAR M
+RegisterNumber:  212222040149
 */
 ```
 
 ## Sourcecode.java:
 
+```
+import java.util.*;  
+public class Exa {  
+   public static void main(String args[]){  
 
+   TreeMap<String,String> tree_map1=new TreeMap<String,String>();      
+  Scanner sc=new Scanner(System.in);
+   int size=sc.nextInt();
+   for(int i=0;i<size;i++)
+   {
+      String n1 = sc.next();
+      String s1= sc.next();
+       
+   	  tree_map1.put(n1,s1);  
+   }
+    
+ Set<String> keys = tree_map1.keySet();
+        for(String key: keys){
+            System.out.println(key);
+        }
+    }
+}
+```
 
 
 
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/51c0a048-b58c-46ed-ae5d-1cf8e544469c)
 
 
 
