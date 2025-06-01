@@ -23,13 +23,57 @@ To Write a java program to compare two elements , if element is greater means di
  ```
 /*
 Program to implement a COMPARABLE & COMPARATOR INTERFACE using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SANTHAKUMAR M
+RegisterNumber:  212222040149
 */
 ```
 
 ## Sourcecode.java:
-
+```
+import java.util.*;
+class Student
+{
+	String name;
+	float percentage;
+	Student(String name, float percentage)
+	{
+		this.name = name;
+		this.percentage = percentage;
+	}
+}
+class PercentageComparator implements Comparator<Student> {
+	public int compare(Student stud1, Student stud2)
+	{
+		if(stud1.percentage < stud2.percentage)
+			return 1;
+		return -1;
+	}
+}
+public class Main {
+	public static void main(String args[])
+	{
+	
+		ArrayList<Student> studList = new ArrayList<Student>();
+		Scanner sc=new Scanner(System.in);
+		int size=sc.nextInt();
+		for(int i=0;i<size;i++)
+		{
+		    studList.add(new Student(sc.next(), sc.nextInt()));
+		}
+		
+		Comparator<Student> com = new PercentageComparator();
+		
+		Collections.sort(studList, com);
+		
+		System.out.println("Avg % --> Name");
+		System.out.println("---------------------");
+		for(Student stud:studList) 
+		{
+			System.out.println(stud.percentage + " --> " + stud.name);
+		}		
+	}	
+}
+```
 
 
 
@@ -38,7 +82,7 @@ RegisterNumber:
 
 ## OUTPUT:
 
-
+![Image](https://github.com/user-attachments/assets/a05b5984-5ade-4d65-b0e8-2dbb97fe659c)
 
 ## RESULT:
 Thus the java program to compare two elements , if element is greater means display 1 otherwise display -1 use only comparable interface in java collection was executed successfully
