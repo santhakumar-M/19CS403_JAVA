@@ -20,20 +20,46 @@ j.	End the program.
  ```
 /*
 Program to implement a STRING WRITER
-Developed by: 
-RegisterNumber:  
+Developed by: SANTHAKUMAR M
+RegisterNumber: 212222040149
 */
 ```
 
 ## Sourcecode.java:
 
 
+```
+import java.io.StringWriter;
+import java.util.*;
+public class Main {
+  public static void main(String[] args) {
 
+    
+     Scanner sc=new Scanner(System.in);
+     String data = sc.nextLine();
+   
+    try {
+      // Create a StringWriter with default string buffer capacity
+      StringWriter output = new StringWriter();
 
+      // Writes data to the string buffer
+      output.write(data,2,4);
 
+      // Prints the string writer
+      System.out.println("Input String: " + data);
+      System.out.println("Specified Location: " + output);
 
+      output.close();
+    }
 
+    catch(Exception e) {
+      e.getStackTrace();
+    }
+  }
+}
+```
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/91766141-89da-42ba-b0ae-8742d3aed008)
 
 
 
