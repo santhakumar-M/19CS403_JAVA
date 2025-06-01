@@ -28,7 +28,7 @@ RegisterNumber:  212222040149
 ```
 import java.util.Scanner;
 
-public class LargestElement {
+public class SmallestElement {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -39,15 +39,15 @@ public class LargestElement {
             array[i] = scanner.nextInt();
         }
 
-        int largest = array[0]; // Assume the first element is the largest initially
+        int n = array[0]; // Assume the first element is the largest initially
 
         for (int i = 1; i < size; i++) {
-            if (array[i] > largest) {
-                largest = array[i];
+            if (array[i] > n) {
+                n = array[i];
             }
         }
 
-        System.out.println("The largest element in the array is: " + largest);
+        System.out.println("The smallest element in the array is: " + n);
 
         scanner.close();
     }
@@ -61,8 +61,17 @@ public class LargestElement {
 
 ## OUTPUT:
 
-<img width="759" alt="image" src="https://github.com/user-attachments/assets/7bb0f0a3-f60f-4e0a-ab84-8e9e3d8bc429" />
+```
+Input       Expected                                  Got
 
+3           Elements in Array are :                   Smallest element in the array is 3                  
+            3  4  5  6  7                             
+4
+5
+6
+7
+
+```
 
 
 ## RESULT:
