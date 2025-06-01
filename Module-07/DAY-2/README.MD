@@ -24,14 +24,39 @@ To Write a Java program to demonstrate control flow of try-catch-finally clause 
  ```
 /*
 Program to implement a Exception Handling-Finally using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SANTHAKUMAR M
+RegisterNumber:  212222040149
 */
 ```
 
 ## Sourcecode.java:
-
-
+```
+import java.util.*;
+public class A
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        try
+        {
+            int a=100;
+            int b=sc.nextInt();
+            int c=a/b;
+            System.out.println("Valid Statement :"+c);
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.println("Exception: "+e);
+        }
+        finally
+        {
+            System.out.println("Finally block executed");
+        }
+        System.out.println("Outside try-catch-finally clause");
+    }
+    
+}
+```
 
 
 
@@ -39,8 +64,7 @@ RegisterNumber:
 
 ## OUTPUT:
 
-
-
+![Image](https://github.com/user-attachments/assets/edd49798-40ff-4e35-b2e4-e0af5be8da75)
 ## RESULT:
 Thus the Java program to demonstrate control flow of try-catch-finally clause when NumberFormatException occur in try block and handled in catch block was executed successfully.
 
