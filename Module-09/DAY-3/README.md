@@ -16,14 +16,26 @@
  ```
 /*
 Program to implement a String Reader using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SANTHAKUMAR M
+RegisterNumber: 212222040149
 */
 ```
 
 ## Sourcecode.java:
 
-
+```
+import java.io.StringReader;  
+public class StringReaderExample {  
+    public static void main(String[] args) throws Exception {  
+        String srg = "Hello Java!! \nWelcome to Java StringReader.";  
+        StringReader reader = new StringReader(srg);  
+        int k=0;  
+            while((k=reader.read())!=-1){  
+                System.out.print((char)k);  
+            }  
+        }  
+}
+```
 
 
 
@@ -31,6 +43,7 @@ RegisterNumber:
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/8d5f5bb6-2953-4dd1-b971-aab94c001b83)
 
 
 ## RESULT:
