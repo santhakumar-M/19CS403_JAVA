@@ -17,20 +17,37 @@
  ```
 /*
 Program to implement a Filter Reader using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SANTHAKUMAR M
+RegisterNumber: 212222040149
 */
 ```
 
 ## Sourcecode.java:
 
-
+```
+class CustomFilterReader1 extends FilterReader
+{  
+    CustomFilterReader1(Reader in)
+    {  
+        super(in);  
+    }  
+    public int read() throws IOException
+    {
+        int x = super.read();  
+        if ((char) x == ' ')  
+            return ((int) '*');  
+        else  
+            return x;  
+    }  
+}
+```
 
 
 
 
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/a2aa98fe-b59b-4e88-8431-e1862293a60b)
 
 
 
