@@ -22,14 +22,50 @@ To Create a java program to display the contains key of 104 and to retrieve the 
  ```
 /*
 Program to implement a JAVA LINKED HASH MAP using Java
-Developed by: 
-RegisterNumber:  
+Developed by: SANTHAKUMAR M
+RegisterNumber:  212222040149
 */
 ```
 
 ## Sourcecode.java:
 
+```
+import java.util.*;
 
+public class OrderedMapExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Map<Integer, String> map = new LinkedHashMap<>();
+
+        
+        int size = sc.nextInt();
+        for (int i = 0; i < size; i++) {
+            int key = sc.nextInt();
+            String value = sc.next();
+            map.put(key, value);
+        }
+
+     
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+
+        
+        if (map.containsKey(100)) {
+            map.replace(100, "welcome to java");
+        }
+
+        
+        System.out.println("HashMap After Replace :");
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+
+        sc.close();
+    }
+}
+
+```
 
 
 
@@ -37,6 +73,7 @@ RegisterNumber:
 
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/b98a7ff9-258f-4ff6-9c8f-18fa154dc952)
 
 
 ## RESULT:
