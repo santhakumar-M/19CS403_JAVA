@@ -15,22 +15,28 @@
  ```
 /*
 Program to implement a Packages using Java
-Developed by: 
-RegisterNumber:  
+Developed by:SANTHAKUMAR M
+RegisterNumber: 212222040149
 */
 ```
 
 ## Sourcecode.java:
+```
+{
+package com.example.app;
 
+import com.example.constants.Constants;
 
-
-
-
-
-
+public class MyApp {
+    public static void main(String[] args) {
+        int sumValue = Constants.SUM;
+        System.out.println("The value of SUM is: " + sumValue);
+    }
+}
+```
 ## OUTPUT:
 
-
+![Image](https://github.com/user-attachments/assets/c967fc40-581f-47ef-b84b-c814b9fb6871)
 
 ## RESULT:
 Thus, the program has accessed the package from another package has been done successfully.
